@@ -4,7 +4,6 @@
   width: 37vw;
   height: 300px;
   background-color: rgb(52, 52, 68);
-  margin-left: 20px;
 }
 
 #imageWrapper {
@@ -99,4 +98,157 @@
 
 a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1790px) {
+  #buttonReadMore {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1660px) {
+  #wrapperBookCard {
+    width: 57vw;
+    height: 300px;
+    justify-content: space-between;
+    margin-left: 0px;
+  }
+
+  #imageWrapper {
+    margin-right: 0px;
+    width: 25%;
+    height: 100%;
+
+    img {
+      width: 90%;
+      height: 100%;
+      margin-left: -18px;
+    }
+  }
+
+  #wrapperGeneral {
+    margin-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 1316px) {
+  #imageWrapper {
+    width: 29%;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  #wrapperBookCard {
+    width: 82vw;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  #imageWrapper {
+    width: 32%;
+  }
+
+  #title {
+    font-size: 22px;
+  }
+
+  #infoWrapper {
+    #language,
+    #pages,
+    #mature {
+      font-size: 16px;
+    }
+  }
+
+  #isbn {
+    font-size: 15px;
+  }
+
+  #wrapperGeneral {
+    margin-right: 30px;
+  }
+
+  #buttonReadMore {
+    width: 300px;
+    height: 40px;
+    font-size: 17px;
+    margin-top: 27px;
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 642px) {
+  #imageWrapper {
+    width: 36%;
+  }
+
+  #title {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+
+  #infoWrapper {
+    #language,
+    #pages,
+    #mature {
+      font-size: 15px;
+    }
+  }
+
+  #isbn {
+    font-size: 15px;
+  }
+
+  #wrapperGeneral {
+    margin-right: 0px;
+  }
+
+  #buttonReadMore {
+    width: 280px;
+    height: 40px;
+    font-size: 17px;
+    margin-top: 27px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #wrapperBookCard {
+    width: 92vw;
+  }
+
+  #imageWrapper {
+    width: 42%;
+  }
+
+  #title {
+    font-size: 18px;
+    word-wrap: break-word;
+  }
+
+  #infoWrapper {
+    #language,
+    #pages,
+    #mature {
+      font-size: 15px;
+    }
+  }
+
+  #isbn {
+    font-size: 15px;
+  }
+
+  #wrapperGeneral {
+    margin-right: 0px;
+  }
+
+  #buttonReadMore {
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #buttonReadMore {
+    width: 200px;
+  }
 }

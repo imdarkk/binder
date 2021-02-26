@@ -16,3 +16,12 @@ body {
   margin-top: 70px;
   justify-content: center;
 }
+
+@media only screen and (max-width: 1790px) {
+  #wrapperBooksResults {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

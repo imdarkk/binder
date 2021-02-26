@@ -15,37 +15,49 @@
   height: 50px;
 
   border-bottom: 3px solid rgb(30, 155, 177);
-  transition: border-color .2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
 
   &::placeholder,
   &:focus,
   &:active,
   &:valid {
-    font-family: 'Gilroy Light';
+    font-family: "Gilroy Light";
     color: white;
   }
 
   &:focus {
-      border-color: rgb(30, 94, 177);
+    border-color: rgb(30, 94, 177);
   }
 }
 
 #buttonSearch {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height: 60px;
-    background: rgb(35, 116, 131);
-    margin-top: 40px;
-    color: white;
-    font-family: 'Gilroy';
-    font-weight: 700;
-    font-size: 24px;
-    transition: background .2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 60px;
+  background: rgb(35, 116, 131);
+  margin-top: 40px;
+  color: white;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 24px;
+  transition: background 0.2s ease-in;
 
-    &:hover {
-        cursor: pointer;
-        background: rgb(38, 150, 170);
-    }
+  &:hover {
+    cursor: pointer;
+    background: rgb(38, 150, 170);
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  #buttonSearch, #inputSearch {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #inputSearch {
+    margin-top: 50px;
+  }
 }

@@ -18,19 +18,23 @@ function App() {
         books={books}
       />
       <div id="wrapperBooksResults">
-        {books.map((s) => (
-          <BookCard
-            images={s.images}
-            title={s.title}
-            language={s.language}
-            pages={s.pages}
-            mature={s.mature}
-            isbn={s.isbn}
-            publisher={s.publisher}
-            date={s.pdate}
-            link={s.infoLink}
-          />
-        ))}
+        {books.map(
+          (s) =>
+            s.title.length < 45 && (
+              <BookCard
+                images={s.images}
+                title={s.title}
+                language={s.language}
+                pages={s.pages}
+                mature={s.mature}
+                isbn={s.isbn}
+                publisher={s.publisher}
+                date={s.pdate}
+                link={s.infoLink}
+                authors={s.authors}
+              />
+            )
+        )}
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const BookCard = (props) => {
       <div id="imageWrapper">
         <img src={props.images} alt="" id="imageBook" />
       </div>
-      <div>
+      <div id="wrapperGeneral">
         <p id="title">{props.title}</p>
         <div id="infoWrapper">
           <p id="language">{props.language}</p>
@@ -19,8 +19,7 @@ const BookCard = (props) => {
           {props.isbn}
         </p>
         <p id="authors">
-          <span id="bold">Author(s):</span> Author 1, Author 2, Author 3, Author
-          4
+          <span id="bold">Author(s):</span> {props.authors.length}
         </p>
         <p id="publisher">
           <span id="bold">Publisher:</span> {props.publisher}
