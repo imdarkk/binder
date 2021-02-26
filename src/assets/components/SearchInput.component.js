@@ -16,7 +16,7 @@ const SearchInput = (props) => {
         publisher: b.volumeInfo?.publisher ?? "N/A",
         pdate: b.volumeInfo?.publishedDate ?? "N/A",
         description: b.volumeInfo?.description ?? "N/A",
-        isbn: b.volumeInfo?.industryIdentifiers[0]?.identifier ?? "",
+        isbn: b.volumeInfo?.industryIdentifiers?.[0].identifier ?? "",
         pages: b.volumeInfo?.pageCount ?? "N/A",
         categories: b.volumeInfo?.categories ?? "N/A",
         mature: b.volumeInfo?.maturityRating ?? "N/A",
