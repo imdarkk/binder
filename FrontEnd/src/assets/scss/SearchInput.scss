@@ -1,0 +1,51 @@
+#wrapperSearchInput {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputSearch {
+  margin-top: 150px;
+  padding-left: 20px;
+  background: none;
+  outline: none;
+  border: none;
+  width: 30vw;
+  height: 50px;
+
+  border-bottom: 3px solid rgb(30, 155, 177);
+  transition: border-color .2s ease-in-out;
+
+  &::placeholder,
+  &:focus,
+  &:active,
+  &:valid {
+    font-family: 'Gilroy Light';
+    color: white;
+  }
+
+  &:focus {
+      border-color: rgb(30, 94, 177);
+  }
+}
+
+#buttonSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 60px;
+    background: rgb(35, 116, 131);
+    margin-top: 40px;
+    color: white;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 24px;
+    transition: background .2s ease-in;
+
+    &:hover {
+        cursor: pointer;
+        background: rgb(38, 150, 170);
+    }
+}

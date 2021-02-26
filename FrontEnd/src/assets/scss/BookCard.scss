@@ -1,0 +1,102 @@
+#wrapperBookCard {
+  display: flex;
+  flex-direction: row;
+  width: 37vw;
+  height: 300px;
+  background-color: rgb(52, 52, 68);
+  margin-left: 20px;
+}
+
+#imageWrapper {
+  margin-right: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 26%;
+  height: 100%;
+
+  img {
+    margin-left: 30px;
+    width: 90%;
+    height: 80%;
+  }
+}
+
+#title {
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-size: 27px;
+  color: white;
+  padding-top: 22px;
+}
+
+#infoWrapper {
+  display: flex;
+  margin-top: 5px;
+
+  #pages,
+  #mature {
+    margin-left: 16px;
+  }
+
+  #language,
+  #pages,
+  #mature {
+    color: white;
+    font-family: "Gilroy Light";
+    font-size: 18px;
+  }
+
+  #mature {
+    color: rgb(185, 81, 81);
+    font-family: "Gilroy";
+  }
+}
+
+#isbn {
+  margin-top: 5px;
+  color: white;
+  font-family: "Gilroy Light";
+}
+
+#bold {
+  font-family: "Gilroy";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+#authors,
+#pdate,
+#publisher,
+#desc {
+  color: white;
+}
+
+#desc {
+  margin-top: 13px;
+  padding-right: 20px;
+}
+
+#buttonReadMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 50px;
+  background-color: rgb(30, 155, 177);
+  color: #333;
+  font-family: "Gilroy";
+  font-size: 20px;
+  margin-top: 27px;
+  margin-left: 35px;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 900;
+  }
+}
+
+a {
+  text-decoration: none;
+}
