@@ -10,20 +10,20 @@ const SearchInput = (props) => {
   const handleSet = (okBooks) => {
     props.setBooks(
       okBooks.map((b) => ({
-        id: b.id,
-        title: b.volumeInfo.title,
-        authors: b.volumeInfo.authors,
-        publisher: b.volumeInfo.publisher,
-        pdate: b.volumeInfo.publishedDate,
-        description: b.volumeInfo.description,
-        isbn: b.volumeInfo.industryIdentifiers[0].identifier,
-        pages: b.volumeInfo.pageCount,
-        categories: b.volumeInfo.categories,
-        mature: b.volumeInfo.maturityRating,
-        images: b.volumeInfo.imageLinks.thumbnail,
-        language: b.volumeInfo.language,
-        preview: b.volumeInfo.previewLink,
-        infoLink: b.volumeInfo.infoLink,
+        id: b?.id ?? "N/A",
+        title: b.volumeInfo?.title ?? "N/A",
+        authors: b.volumeInfo?.authors ?? "N/A",
+        publisher: b.volumeInfo?.publisher ?? "N/A",
+        pdate: b.volumeInfo?.publishedDate ?? "N/A",
+        description: b.volumeInfo?.description ?? "N/A",
+        isbn: b.volumeInfo?.industryIdentifiers[0]?.identifier ?? "",
+        pages: b.volumeInfo?.pageCount ?? "N/A",
+        categories: b.volumeInfo?.categories ?? "N/A",
+        mature: b.volumeInfo?.maturityRating ?? "N/A",
+        images: b.volumeInfo?.imageLinks?.thumbnail ?? "",
+        language: b.volumeInfo?.language ?? "N/A",
+        preview: b.volumeInfo?.previewLink ?? "N/A",
+        infoLink: b.volumeInfo?.infoLink ?? "",
       }))
     );
   };
